@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, 'Times New Roman', Times, serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em; /* Larger font for your name */
+  margin-bottom: 1em;
+}
+
+img {
+  margin: 1em auto; /* Center image */
+}
+
+table {
+  width: 85%;
+  margin: 0 auto; /* Center table */
+  border-collapse: collapse; /* Remove border between cells */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Border for individual cells */
+  padding: 10px;
+}
+
+th {
+  background-color: #000; /* Black header background */
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Style each course row with a different background color and contrasting text */
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+/* No special styling needed for unused cells, they inherit background from body */
+
+.lab {
+  font-size: 0.8em; /* Smaller font for lab descriptor */
+  color: #999;
+}
+
+/* Print Mode Styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+  table, th, td {
+    border-color: black;
+  }
+  
+  th {
+    background-color: lightblue;
+  }
+}
